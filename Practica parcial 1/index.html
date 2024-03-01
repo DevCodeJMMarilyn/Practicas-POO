@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante de Comida Rápida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Menú</h1>
+        <div id="menu"></div>
+        
+        <h2>Realizar Pedido</h2>
+        <label for="nombre">Nombre del Cliente:</label>
+        <input type="text" id="nombre">
+        <button id="realizarPedido" class="small-button">Realizar Pedido</button>
+        
+        <h2>Pedido Actual</h2>
+        <div id="pedido"></div>
+        
+        <h2>Estado del Pedido</h2>
+        <p id="estado" class="pedido-estado"></p>
+        
+        <h2>Pedidos en Cocina</h2>
+        <table id="pedidosEnCocina" class="pedido-table">
+          <tr>
+            <th>Cliente</th>
+            <th>Pedido</th>
+            <th>Total</th>
+            <th>Acción</th>
+          </tr>
+        </table>
+        
+        <h2>Pedidos Listos</h2>
+        <table id="pedidosListos" class="pedido-table">
+          <tr>
+            <th>Cliente</th>
+            <th>Pedido</th>
+            <th>Total</th>
+          </tr>
+        </table>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
